@@ -72,7 +72,8 @@ curl -X POST "http://127.0.0.1:5055/api/subtitle-overlay/export-upload" \
 
 ## Run
 
-1. Ensure Next app is running (it must expose `/api/subtitle-export/*`).
+1. Ensure `NEXT_EXPORT_BASE_URL` points to the Next app that exposes `/api/subtitle-export/*`.
+   - Current deployed base URL: `http://4.210.217.8/`
 2. Configure environment:
    - Copy `.env.example` to `.env` and fill values.
 3. Start this service:

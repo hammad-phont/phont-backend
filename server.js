@@ -41,7 +41,7 @@ const CONFIG = {
   port: Math.round(toPositiveNumber(process.env.PORT, 5055)),
   nextExportBaseUrl: normalizeBaseUrl(
     process.env.NEXT_EXPORT_BASE_URL,
-    "http://127.0.0.1:3000",
+    "http://4.210.217.8/",
   ),
   subtitleSourceBaseUrl: normalizeBaseUrl(
     process.env.SUBTITLE_SOURCE_API_BASE_URL ||
