@@ -1222,8 +1222,8 @@ async function handleUploadAndExportRequest(req, res) {
     req.body?.format === "vp9-alpha-webm"
       ? "vp9-alpha-webm"
       : CONFIG.exportFormat;
-  const maxExpression = toPositiveNumber(req.body?.maxExpression, 1.0);
-  const threshold = toPositiveNumber(req.body?.threshold, 0.2);
+  const maxExpression = toPositiveNumber(req.body?.maxExpression, 0.4);
+  const threshold = toPositiveNumber(req.body?.threshold, 0.5);
   const isRTL = parseBoolean(req.body?.isRTL, false);
 
   const clientAbortController = new AbortController();
